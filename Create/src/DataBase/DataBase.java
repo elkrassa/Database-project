@@ -25,6 +25,7 @@ public class DataBase {
             choice = scan.nextInt();
 		    choiceResult(choice, Lista);
 
+                    
 		}
 
 	}
