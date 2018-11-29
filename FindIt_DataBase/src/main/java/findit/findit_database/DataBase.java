@@ -3,6 +3,7 @@ package findit.findit_database;
 
 import java.util.LinkedList;
 import java.util.Scanner;
+//import java.io.DataInputStream;
 
 public class DataBase {
     
@@ -12,12 +13,14 @@ public class DataBase {
 
 		System.out.println(" ~~Welcome to your Data Base!~~ \n");
 		menu();
-
-		Scanner scan = new Scanner(System.in);
+                
+               
+		Scanner  scan = new Scanner(System.in, "UTF-8");
 		int choice = scan.nextInt();
+                
 
 		choiceResult(choice, Lista);
-		while (Continue().equals("Yes")) { //κάθε φορά που ο χρήστης απαντάει θετικα στην μέθοδο Continue, θα εμφανίζεται το μενού και θα ζητέιται η απάντηση απο την αρχη.
+		while (continue1().equals("Yes")) { //κάθε φορά που ο χρήστης απαντάει θετικα στην μέθοδο Continue, θα εμφανίζεται το μενού και θα ζητέιται η απάντηση απο την αρχη.
 
             System.out.println("\n");
 			menu();
@@ -44,10 +47,10 @@ public class DataBase {
 
 		switch (choice) {
 
-			case 1: Lista.add(ElementInsertion.Insert());
+                    case 1: Lista.add(ElementInsertion.insert());
 					break;
 
-           /* case 2: ElementErasure.Delete(List);
+                /* case 2: ElementErasure.Delete(List);
 					break;
 
 		    case 3: EditElement.Edit();
@@ -58,13 +61,15 @@ public class DataBase {
 					} else {
                         System.out.println("Your full data-base is: " + Lista);
 					}
+                    default : System.out.println("Wrong option");
+                             break; 
 
-		}
+                }
         }
 
-	public static String Continue() {  //ελεγχει αν ο χρήστης θέλει να συνεχίσει να βρίσκεται στην βάση δεδομένων.
+	public static String continue1() {  //ελεγχει αν ο χρήστης θέλει να συνεχίσει να βρίσκεται στην βάση δεδομένων.
 
-		Scanner scan = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in, "UTF-8");
 
 		System.out.println("Do you want to continue? (Yes or No)");
 		String option = scan.nextLine();
