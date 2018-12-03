@@ -24,25 +24,15 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+    
+    <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>3.0.6-SNAPSHOT</version>
+      </plugin>
+    </plugins>
+  </reporting>
+  
 </project>
-
-<plugin>
-      <artifactId>maven-checkstyle-plugin</artifactId>
-      <configuration>
-            <includeTests>true</includeTests>
-            <rulesets>
-            <ruleset>${checkstyle-config-url}</ruleset>
-            </rulesets>
-            <minimumTokens>100</minimumTokens>
-            <targetJdk>${targetJdk}</targetJdk>
-            <failOnViolation>true</failOnViolation>
-      </configuration>
-      <executions>
-            <execution>
-            <phase>test</phase>
-                <goals>
-            	    <goal>check</goal>
-                </goals>
-            </execution>
-      </executions>      
-</plugin>
