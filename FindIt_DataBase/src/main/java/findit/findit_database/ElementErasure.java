@@ -4,7 +4,7 @@ package findit.findit_database;
 import java.util.Scanner;
 import java.util.LinkedList;
 
-public class ElementErasure {
+public class ElementEdit {
     
     public static LinkedList<Element> edit(LinkedList<Element> list) {
 
