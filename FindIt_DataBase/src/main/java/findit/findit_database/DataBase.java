@@ -8,22 +8,22 @@ public class DataBase {
     
     public static void main(String [] args) {
 
-		LinkedList<LinkedList<Element>> Lista = new LinkedList<LinkedList<Element>>(); //δημιουργία της λίστας.
+	LinkedList<LinkedList<Element>> Lista = new LinkedList<>(); //δημιουργία της λίστας.
 
-		System.out.println(" ~~Welcome to your Data Base!~~ \n");
-		menu();
+	System.out.println(" ~~Welcome to your Data Base!~~ \n");
+	menu();
 
-		Scanner scan = new Scanner(System.in);
-		int choice = scan.nextInt();
+	Scanner scan = new Scanner(System.in);
+	int choice = scan.nextInt();
 
-		choiceResult(choice, Lista);
-		while (Continue().equals("Yes")) { //κάθε φορά που ο χρήστης απαντάει θετικα στην μέθοδο Continue, θα εμφανίζεται το μενού και θα ζητέιται η απάντηση απο την αρχη.
+	choiceResult(choice, Lista);
+	while (Continue().equals("Yes")) { //κάθε φορά που ο χρήστης απαντάει θετικα στην μέθοδο Continue, θα εμφανίζεται το μενού και θα ζητέιται η απάντηση απο την αρχη.
 
-            System.out.println("\n");
-			menu();
+        System.out.println("\n");
+	menu();
 
-            choice = scan.nextInt();
-		    choiceResult(choice, Lista);
+        choice = scan.nextInt();
+	choiceResult(choice, Lista);
    
 		}
 
@@ -47,16 +47,16 @@ public class DataBase {
 			case 1: Lista.add(ElementInsertion.Insert());
 					break;
 
-           /* case 2: ElementErasure.Delete(List);
-					break;
+                        /*case 2: ElementErasure.Delete(Lista);
+					break;*/
 
-		    case 3: EditElement.Edit();
+		        /*case 3: EditElement.Edit();
 		            break;*/
 
-		    case 4: if (Lista == null) {
-                        System.out.println("Your data-base is empty.");
+		        case 4: if (Lista == null) {
+                            System.out.println("Your data-base is empty.");
 					} else {
-                        System.out.println("Your full data-base is: " + Lista);
+                            System.out.println("Your full data-base is: " + Lista);
 					}
 
 		}
