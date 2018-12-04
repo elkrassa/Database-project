@@ -5,6 +5,7 @@ package findit.findit_database;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+
 public class DataBase {
     
     public static void main(String [] args) {
