@@ -18,8 +18,8 @@ public class DataBase {
 	Scanner scan = new Scanner(System.in);
 	int choice = scan.nextInt();
 
-	choiceResult(choice, Lista);
-	while (Continue().equals("Yes")) { //κάθε φορά που ο χρήστης απαντάει θετικα στην μέθοδο Continue, θα εμφανίζεται το μενού και θα ζητέιται η απάντηση απο την αρχη.
+		choiceResult(choice, Lista);
+		while (continue1().equals("Yes")) { //κάθε φορά που ο χρήστης απαντάει θετικα στην μέθοδο Continue, θα εμφανίζεται το μενού και θα ζητέιται η απάντηση απο την αρχη.
 
         System.out.println("\n");
 	menu();
@@ -46,7 +46,7 @@ public class DataBase {
 
 		switch (choice) {
 
-			case 1: Lista.add(ElementInsertion.Insert());
+                    case 1: Lista.add(ElementInsertion.insert());
 					break;
 
                         /*case 2: ElementErasure.Delete(Lista);
@@ -60,13 +60,15 @@ public class DataBase {
 					} else {
                             System.out.println("Your full data-base is: " + Lista);
 					}
+                    default : System.out.println("Wrong option");
+                             break; 
 
-		}
+                }
         }
 
-	public static String Continue() {  //ελεγχει αν ο χρήστης θέλει να συνεχίσει να βρίσκεται στην βάση δεδομένων.
+	public static String continue1() {  //ελεγχει αν ο χρήστης θέλει να συνεχίσει να βρίσκεται στην βάση δεδομένων.
 
-		Scanner scan = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in, "UTF-8");
 
 		System.out.println("Do you want to continue? (Yes or No)");
 		String option = scan.nextLine();
