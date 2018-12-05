@@ -20,9 +20,7 @@ public class DataBase {
 	int choice = scan.nextInt();
 		System.out.println(" ~~Welcome to your Data Base!~~ \n");
 		menu();
-                
-               
-                
+             
 
 		choiceResult(choice, Lista);
 		while (continue1().equals("Yes")) { //κάθε φορά που ο χρήστης απαντάει θετικα στην μέθοδο Continue, θα εμφανίζεται το μενού και θα ζητέιται η απάντηση απο την αρχη.
@@ -55,8 +53,6 @@ public class DataBase {
                     case 1: Lista.add(ElementInsertion.insert());
 					break;
 
-                        /*case 2: ElementErasure.Delete(Lista);
-					break;*/
                 /* case 2: ElementErasure.Delete(List);
 					break;
 
