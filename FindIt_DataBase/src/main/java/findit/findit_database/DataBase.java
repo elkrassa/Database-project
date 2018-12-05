@@ -1,35 +1,32 @@
-//DOKIMI
 package findit.findit_database;
-
 
 import java.util.LinkedList;
 import java.util.Scanner;
 //import java.io.DataInputStream;
 
 public class DataBase {
-    
+
     public static void main(String [] args) {
 
-	LinkedList<LinkedList<Element>> Lista = new LinkedList<>(); //δημιουργία της λίστας.
+		LinkedList<LinkedList<Element>> Lista = new LinkedList<>(); //δημιουργία της λίστας.
 
-	System.out.println(" ~~Welcome to your Data Base!~~ \n");
-	menu();
-
-	Scanner scan = new Scanner(System.in);
-	int choice = scan.nextInt();
 		System.out.println(" ~~Welcome to your Data Base!~~ \n");
 		menu();
-               
+
+
+		Scanner  scan = new Scanner(System.in, "UTF-8");
+		int choice = scan.nextInt();
+
 
 		choiceResult(choice, Lista);
 		while (continue1().equals("Yes")) { //κάθε φορά που ο χρήστης απαντάει θετικα στην μέθοδο Continue, θα εμφανίζεται το μενού και θα ζητέιται η απάντηση απο την αρχη.
 
-        System.out.println("\n");
-	menu();
+            System.out.println("\n");
+			menu();
 
-        choice = scan.nextInt();
-	choiceResult(choice, Lista);
-   
+            choice = scan.nextInt();
+		    choiceResult(choice, Lista);
+
 		}
 
 	}
@@ -49,22 +46,25 @@ public class DataBase {
 
 		switch (choice) {
 
-                    case 1: Lista.add(ElementInsertion.insert());
-					break;
+            case 1: Lista.add(ElementInsertion.insert());
+				break;
 
-                /* case 2: ElementErasure.Delete(List);
-					break;
+            //case 2: ElementErasure.Delete(Lista);
+				//break;
+		    //case 3: EditElement.Edit();
+		        //break;*
 
-		        /*case 3: EditElement.Edit();
-		            break;*/
-
-		        case 4: if (Lista == null) {
-                            System.out.println("Your data-base is empty.");
+		    case 4: if (Lista == null) {
+                        System.out.println("Your data-base is empty.");
 					} else {
-                            System.out.println("Your full data-base is: " + Lista);
+						for(int y = 0; y < Lista.size(); y++) {
+                        System.out.println(Lista.get(y));
+                        //System.out.println("\n");
+						}
+
 					}
-                    default : System.out.println("Wrong option");
-                             break; 
+                    default :
+                             break;
 
                 }
         }
@@ -81,5 +81,5 @@ public class DataBase {
 	}
 
 
-    
+
 }
