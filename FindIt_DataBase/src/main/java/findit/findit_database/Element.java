@@ -1,8 +1,7 @@
-//Dokimi
 package findit.findit_database;
 
 public class Element {
-    
+
     private String name;
 	private String content;
 
@@ -11,6 +10,9 @@ public class Element {
 		this.name = name;
 		this.content = content;
 
+	}
+	public String toString() {
+		return  this.name + " : " + this.content;
 	}
 
 	public String getName() {
@@ -36,5 +38,5 @@ public class Element {
 		this.content = content;
 
 	}
-    
+
 }
