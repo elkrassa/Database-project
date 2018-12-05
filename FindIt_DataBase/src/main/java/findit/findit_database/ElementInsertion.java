@@ -1,21 +1,25 @@
-
 package findit.findit_database;
 
 import java.util.Scanner;
 import java.util.LinkedList;
 
 public class ElementInsertion {
-    
-    /**
-     *
-     * @return
-     */
+
     public static LinkedList<Element> insert() {
 
 		Scanner scan = new Scanner(System.in);
 		String k = "Yes";
 
 		LinkedList<Element> list = new LinkedList<>();
+
+		//System.out.println("Ονομα Επαφης :");
+
+
+		String name1 = "Οnoma epafis";
+		System.out.println("dwse onoma epafis:");
+		String content1 = scan.nextLine();
+		Element element1 = new Element(name1 , content1);
+		list.add(element1);
 
 		while (k.equals("Yes")) {
 
@@ -35,6 +39,6 @@ public class ElementInsertion {
 
 
 	}
-    
-    
+
+
 }
