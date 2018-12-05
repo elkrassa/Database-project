@@ -4,9 +4,9 @@ package findit.findit_database;
 import java.util.Scanner;
 import java.util.LinkedList;
 
-public class ElementEdit {
+public class ElementErasure {
     
-    public static LinkedList<Element> edit(LinkedList<Element> list) {
+    public static LinkedList<Element> Delete(LinkedList<Element> list) {
 
 	    int length = list.size();
 
