@@ -6,7 +6,11 @@ import java.util.LinkedList;
 
 public class ElementInsertion {
     
-    public static LinkedList<Element> Insert() {
+    /**
+     *
+     * @return
+     */
+    public static LinkedList<Element> insert() {
 
 		Scanner scan = new Scanner(System.in);
 		String k = "Yes";
