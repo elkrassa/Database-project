@@ -6,13 +6,13 @@ import java.util.LinkedList;
 
 public class ElementErasure {
     
-    public static LinkedList<Element> Delete(LinkedList<Element> list) {
-
-	    int length = list.size();
-
-	    Scanner scan = new Scanner(System.in);
-
-	    int element;
+     public static LinkedList<LinkedList<Element>> Delete(LinkedList<LinkedList<Element>> list) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Press 1 if you want to delete an element or press 2 if you want to delete the whole data base"); // change
+		int choice = scan.nextInt();
+		if (choice == 1) { //change
+			int length = list.size();
+			int element;
 
 	    do {
 
@@ -26,12 +26,17 @@ public class ElementErasure {
             }
 	    } while (element > length || element < 0);
 
-        list.remove(element);
-        System.out.println("Element deleted succesfully!");
+        list.remove(element - 1); //change
+        System.out.println("Element deleted succesfully!"); }
+        else if (choice == 2)  { // change
+			while (!list.isEmpty()) {
+			        list.removeFirst();
+				}
+			System.out.println("Data Base deleted succesfully!");
+    }
 
         return list;
 
 	}
-    
     
 }

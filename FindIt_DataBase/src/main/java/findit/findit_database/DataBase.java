@@ -46,26 +46,24 @@ public class DataBase {
 
 		switch (choice) {
 
-            case 1: Lista.add(ElementInsertion.insert());
-				break;
+                    case 1: Lista.add(ElementInsertion.insert());
+		    break;
 
-            //case 2: ElementErasure.Delete(Lista);
-				//break;
-		    //case 3: EditElement.Edit();
-		        //break;*
+                    case 2: ElementErasure.Delete(Lista);
+		    break;
+		    
+                    /*case 3: EditElement.Edit();
+		    break;*/
 
 		    case 4: if (Lista == null) {
                         System.out.println("Your data-base is empty.");
-					} else {
-						for(int y = 0; y < Lista.size(); y++) {
-                        System.out.println(Lista.get(y));
-                        //System.out.println("\n");
-						}
+			} else {
+			    for(int y = 0; y < Lista.size(); y++) {
+                                System.out.println(Lista.get(y));
+                                System.out.println("\n");
+			    }
 
-					}
-                    default :
-                             break;
-
+			}
                 }
         }
 
