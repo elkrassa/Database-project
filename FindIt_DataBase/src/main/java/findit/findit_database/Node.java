@@ -10,5 +10,9 @@ public class Node {
         this.data = data;
         
     }
+
+    Node next() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

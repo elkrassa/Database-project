@@ -6,8 +6,13 @@ import java.util.LinkedList;
 
 public class ElementErasure {
     
-     public static LinkedList<LinkedList<Element>> Delete(LinkedList<LinkedList<Element>> list) {
-		Scanner scan = new Scanner(System.in);
+    /**
+     *
+     * @param list
+     * @return
+     */
+    public static LinkedList<LinkedList<Element>> delete(LinkedList<LinkedList<Element>> list) {
+		Scanner scan = new Scanner(System.in , "UTF-8");
 		System.out.println("Press 1 if you want to delete an element or press 2 if you want to delete the whole data base"); // change
 		int choice = scan.nextInt();
 		if (choice == 1) { //change

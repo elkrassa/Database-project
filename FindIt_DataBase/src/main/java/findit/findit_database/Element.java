@@ -2,17 +2,23 @@ package findit.findit_database;
 
 public class Element {
 
+	private int number;
     private String name;
 	private String content;
 
-	public Element(String name, String content) {
+	public Element(int number, String name, String content) {
 
+		this.number = number;
 		this.name = name;
 		this.content = content;
 
 	}
 	public String toString() {
-		return  this.name + " : " + this.content;
+		return  this.number+ ") " + this.name + " : " + this.content;
+	}
+	public int getNumber() {
+
+		return number;
 	}
 
 	public String getName() {
@@ -25,6 +31,10 @@ public class Element {
 
 		return content;
 
+	}
+	public void setNumber(int number) {
+
+		this.number = number;
 	}
 
 	public void setName(String name) {
