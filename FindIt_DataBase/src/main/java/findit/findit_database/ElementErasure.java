@@ -5,43 +5,98 @@ import java.util.Scanner;
 import java.util.LinkedList;
 
 public class ElementErasure {
-    
-    /**
-     *
-     * @param list
-     * @return
-     */
+
     public static LinkedList<LinkedList<Element>> delete(LinkedList<LinkedList<Element>> list) {
 		Scanner scan = new Scanner(System.in , "UTF-8");
-		System.out.println("Press 1 if you want to delete an element or press 2 if you want to delete the whole data base"); // change
+		System.out.println("Press 1 if you want to delete an Insertion or press 2 if you want to delete the whole data base"); // change
 		int choice = scan.nextInt();
-		if (choice == 1) { //change
-			int length = list.size();
-			int element;
+                int length = list.size();
+		switch(choice) { //change
 
-	    do {
+			case 1 :
+			{
+				System.out.println("Press 1 if you want to delete the whole Insertion or  Press 2 to delete an element of an Insertion");
+				int an=scan.nextInt();
+				switch(an) {
+					case 1: {
+						int n;
+						do {
 
-		    System.out.println("Which element do you want to delete?\n");
-		    element = scan.nextInt();
+							System.out.println("Choose the number of the insertion you want to delete\n");
+							n = scan.nextInt();
+							n=n-1;
+							if (n > length || n < 0) {
+								System.out.println("There is no such insertion\n");
+							}
+						} while (n > length || n < 0);
+						LinkedList<Element> ep = list.get(n);
+						list.remove(ep);
+						System.out.println("Insertion deleted succesfully");
+						//int sizee = ep.size();
+					}
+					break;
+					case 2:
+					{
 
-		    if (element > length || element < 0) {
+							int n;
+							do {
 
-		    System.out.println("There is no element there.Try again");
+								System.out.println("Where is the element you want to delete? Choose the number of the insertion first\n");
+								n = scan.nextInt();
+								n=n-1;
+								if (n > length || n < 0) {
+									System.out.println("There is no such insertion\n");
+								}
+							} while (n > length || n < 0);
+							LinkedList<Element> ep = list.get(n);
+							int thesi=0;
+							int sizee = ep.size();
+                                                        /*try {*/
+							do {
+								System.out.printf("In insertion %d  which element do you want to delete?\n",n+1);
+								thesi = scan.nextInt();
+								if (thesi > sizee || thesi < 0) {
+									System.out.println("There is no such element\n");
+								}
+							} while (thesi > sizee || thesi < 0);
+							//ep = ep.splice(thesi,1);
+							Element name2 = ep.get(thesi-1);
+							ep.remove(name2);
+							System.out.println("Element deleted succesfully");
+							for(int y=thesi; y<sizee; y++){
+								Element name1 = ep.get(y-1);
+								int ok = name1.getNumber();
+								ok=ok-1;
+								name1.setNumber(ok);
+							}
+                                                        /*} catch (IndexOutOfBoundsException e) {
+                                                                System.out.println("Your number does not refere to an element!");
+                                                            }*/
 
-            }
-	    } while (element > length || element < 0);
 
-        list.remove(element - 1); //change
-        System.out.println("Element deleted succesfully!"); }
-        else if (choice == 2)  { // change
-			while (!list.isEmpty()) {
+
+
+					}
+					break;
+				}
+			}
+			break;
+
+			case 2:
+			{
+
+       			while (!list.isEmpty()) {
 			        list.removeFirst();
 				}
-			System.out.println("Data Base deleted succesfully!");
-    }
+				System.out.println("Data Base deleted succesfully!");
+			}
+			break;
 
-        return list;
+
+		}
+
+	return list;
 
 	}
-    
+
 }

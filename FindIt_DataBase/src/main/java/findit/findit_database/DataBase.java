@@ -96,8 +96,9 @@ public class DataBase {
 			writer.close();
 			System.out.println("File Saved!");
 		}
-		catch (FileNotFoundException | UnsupportedEncodingException ex)
-		{ ; }
+		catch (FileNotFoundException | UnsupportedEncodingException ex){ 
+                    System.out.println("An error occured, please try again!");
+                }
              break;
              
 	    case 6 : System.exit(0);
