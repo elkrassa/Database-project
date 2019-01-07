@@ -7,7 +7,7 @@ package findit.findit_database;
  * This element is used in class Database in order to store new data.
  * 
  * 
- * @authors Vakalopoulou Lydia (8170010)
+ * @author Vakalopoulou Lydia (8170010)
  *          Danalis Petros (8170023)
  *          Daskalakis Alexandros (8170024)
  *          Krassa Eleftheria (8170049)
