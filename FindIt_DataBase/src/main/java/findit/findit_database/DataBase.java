@@ -22,7 +22,7 @@ package findit.findit_database;
  *          Daskalakis Alexandros (8170024)
  *          Krassa Eleftheria (8170049)
  *          Mpalomatini Loukia (8170079)
- *          Sourmpati Konstantina-Maria(8170120)
+ *          Sourmpati Maria - Kwnstantina (8170120)
  * @version 1.0
  * @since 2019-01-09
  *           
