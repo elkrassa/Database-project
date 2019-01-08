@@ -1,8 +1,8 @@
 package findit.findit_database;
 
 /**
- * The ElementEditing class is used to edit an already exstened element from the 
- * dabase.
+ * The ElementEditing class is used to edit an already existed element from the 
+ * database.
  * <p>
  * This class is used in class Database in order to edit the data.
  * 
