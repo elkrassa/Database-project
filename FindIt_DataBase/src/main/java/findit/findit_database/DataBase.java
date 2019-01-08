@@ -7,6 +7,14 @@ package findit.findit_database;
  * <p>
  * In this database you can store any kind of data you
  * want!
+ * The functions which excecutes are: 
+ * -Insert an element into the database.
+ * -Delete: A specific content of an element, an element or the whole database.
+ * -Edit the content of an element.
+ * -Display the whole database.
+ * -Save the database in your system.
+ * -Exit database.
+ * 
  * 
  * 
  * @author Vakalopoulou Lydia (8170010)

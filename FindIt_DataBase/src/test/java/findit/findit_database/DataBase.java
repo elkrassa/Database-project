@@ -5,6 +5,11 @@
  */
 package findit.findit_database;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.util.LinkedList;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -21,6 +26,7 @@ public class DataBase {
     public DataBase() {
     }
     
+  
     @BeforeClass
     public static void setUpClass() {
     }
