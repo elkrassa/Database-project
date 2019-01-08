@@ -2,12 +2,12 @@ package findit.findit_database;
 
 /**
  * <h1> Data Base! </h1>
- * The DataBase class impliments an application that 
+ * The DataBase class implements an application that 
  * creates a full-functional database.
  * <p>
  * In this database you can store any kind of data you
  * want!
- * The functions which excecutes are: 
+ * The functions which exececutes are: 
  * -Insert an element into the database.
  * -Delete: A specific content of an element, an element or the whole database.
  * -Edit the content of an element.
