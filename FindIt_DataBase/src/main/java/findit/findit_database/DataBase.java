@@ -104,10 +104,10 @@ public class DataBase {
 	}
       
         /**
-        * This method checks the choise of the user and calls the matching
+        * This method checks the choice of the user and calls the matching
         * class or method for each choice.
         * @param choice This is the first parametre to choiceResult method.
-        * @param Lista This is the seconf parametre to choiceResult method.
+        * @param Lista This is the second parametre to choiceResult method.
         * @throws java.io.FileNotFoundException
         * @see java.io.FileNotFoundException
         * @throws java.io.UnsupportedEncodingException
@@ -167,7 +167,7 @@ public class DataBase {
         /**
          * This method checks if the user wants to continue using the database 
          * or not. 
-         * @return String This reurns equivalnt message if the user inserts 
+         * @return String This returns equivalent message if the user inserts 
          * invalid entry.
          */
 	public static String continue1() {
@@ -191,7 +191,7 @@ public class DataBase {
         
         /**
          * This method saves the database in the system.
-         * @param Lista This is the firs parametre to saveFile method. 
+         * @param Lista This is the first parametre to saveFile method. 
          * @throws FileNotFoundException
          * @see FileNotFoundException
          * @throws UnsupportedEncodingException 
