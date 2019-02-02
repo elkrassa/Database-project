@@ -42,7 +42,7 @@ public class ElementEditing {
 					epafi=scan.nextInt();
 					epafi=epafi-1;
 					if (epafi > length || epafi < 0) {
-						System.out.println("There is no such insertion\n");
+						System.out.println("There is no such an insertion\n");
 					}
 		        } while (epafi > length || epafi < 0);
 		        LinkedList<Element> ep = list.get(epafi);
@@ -63,7 +63,7 @@ public class ElementEditing {
 					}
 					thesi = scan.nextInt();
 					if (thesi > sizee || thesi < 0) {
-						System.out.println("There is no such element\n");
+						System.out.println("There is no such an element\n");
 					}
 				} while (thesi > sizee || thesi < 0);
 
