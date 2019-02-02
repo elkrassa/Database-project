@@ -36,3 +36,47 @@
   </reporting>
   
 </project>
+
+
+<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.9</version>
+        <configuration>
+            <tags>
+                <tag>
+                    <name>summary</name>
+                    <placement>a</placement>
+                    <head>Miredot summary (resource title)</head>
+                </tag>
+                <tag>
+                    <name>title</name>
+                    <placement>a</placement>
+                    <head>Miredot summary (resource title)</head>
+                </tag>
+                <tag>
+                    <name>servicetag</name>
+                    <placement>a</placement>
+                    <head>Miredot resource tag (label)</head>
+                </tag>
+                <tag>
+                    <name>statuscode</name>
+                    <placement>a</placement>
+                    <head>Miredot resource status code(s)</head>
+                </tag>
+                <tag>
+                    <name>responseheader</name>
+                    <placement>a</placement>
+                    <head>Miredot response header</head>
+                </tag>
+            </tags>
+        </configuration>
+        <executions>
+            <execution>
+                <id>attach-javadocs</id>
+                <goals>
+                    <goal>jar</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>

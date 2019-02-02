@@ -43,10 +43,8 @@ public class DataBase {
          * This is the main method to class DataBase which scan users choice and
          * checks if it is valid or not.
          * @param args This is the firt parametre to main method.
-         * @throws FileNotFoundException
-         * @see FileNotFoundException
-         * @throws UnsupportedEncodingException 
-         * @see UnsupportedEncodingException 
+         * @throws FileNotFoundException if file does not exist.
+         * @throws UnsupportedEncodingException if the character encoding is not supported.
          */
 
 	public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
@@ -107,11 +105,10 @@ public class DataBase {
         * This method checks the choice of the user and calls the matching
         * class or method for each choice.
         * @param choice This is the first parametre to choiceResult method.
-        * @param Lista This is the second parametre to choiceResult method.
-        * @throws java.io.FileNotFoundException
+        * @param Lista This is the seconf parametre to choiceResult method.
+        * @throws java.io.FileNotFoundException if file does not exist.
         * @see java.io.FileNotFoundException
-        * @throws java.io.UnsupportedEncodingException
-        * @see java.io.UnsupportedEncodingException
+        * @throws java.io.UnsupportedEncodingException if the character encoding is not supported.
         */
 	public static void choiceResult(int choice, LinkedList<LinkedList<Element>> Lista) throws FileNotFoundException, UnsupportedEncodingException {
       
